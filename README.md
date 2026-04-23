@@ -3,13 +3,14 @@ Proyecto para validar los conocimientos obtenidos en el Track: Fundamentos del D
 
 # Estructura
 app05/
-├──index.html
-├──articulos.html
-├──articulo.html
-├──css/
-|   └─styles.css
-├──js/
-|   └─app.js
+├─ index.html
+├─ articulos.html
+├─ articulo.html
+├─ acerca.html
+├─ css/
+│  └─ styles.css
+├─ js/
+│  └─ app.js
 └─ README.md
 
 # Variables CSS
