@@ -1,76 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artículos - IaconNews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
 <body>
-<header>IaconNews
-    <div>
-        <div>
-            <a href="">
-                <span>Icono</span>
-                <span>Iacon<span>News</span></span>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Iacon<span>News</span></span>
             </a>
-            </div>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Articulos</a></li>
-            <li><a href="">Teletran 1</a></li>
-            <li><a href="">Acerca de</a></li>
-            
-        </ul>
-    </nav>
-    <div>
-        <button>
-        <span>◐</span>
-        </button>
-    </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="articulo.html">Teletran 1</a></li>
+                <li><a href="acerca.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-btn-wrapper">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                <span>🌙</span>
+            </button>
+        </div>
     </div>
 </header>
 
+<main>
+    
+    <section class="articles-header">
+        <h1>Todos los Artículos</h1>
+        <p>Noticias, análisis y reportes desde el corazón de Cybertron</p>
+    </section>
 
-    <footer>
-        <div>
-
-            <section>
-                <h3>Iacon News</h3>
-                <p>Hasta que todos seamos uno</p>
-            </section>
-
-            <nav>
-                <h4>Mapa del Sitio</h4>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Ultimas Noticias</li>
-                    <li>Teletran 1</li>
-                    <li>Sobre Nosotros</li>
-                </ul>
-            </nav>
-
-            <section>
-                <h4>Categorias</h4>
-                <ul>
-                    <li><a href="#">Categoria 1</a></li>
-                    <li><a href="#">Categoria 2</a></li>
-                    <li><a href="#">Categoria 3</a></li>
-                    <li><a href="#">Categoria 4</a></li>
-                </ul>
-            </section>
-
+    
+    <section class="articles-filters">
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+            <button class="filter-btn" data-filter="deporte">Deporte</button>
+            <button class="filter-btn" data-filter="energia">Energón</button>
         </div>
-        <div>
-            <p>%© 2026 Iacon News. Hasta que todos seamos uno</p>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar artículos...">
+            <span class="search-icon">🔍</span>
+        </div>
+    </section>
+
+    
+    <section class="articles-grid">
+        
+        <article class="article-card" data-category="tecnologia">
+            <div class="article-card-header">
+                <span class="article-category">Tecnología</span>
+                <span class="article-date">15 Abr 2026</span>
+            </div>
+            <h3>Teletran 1 recibe actualización de firmware v9.4</h3>
+            <p>La IA central de Iacon amplía su capacidad de rastreo a 12 sistemas estelares simultáneamente, mejorando la precisión en la detección de amenazas.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 8 min</span>
+                <a href="articulo.html" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="deporte">
+            <div class="article-card-header">
+                <span class="article-category">Deporte</span>
+                <span class="article-date">14 Abr 2026</span>
+            </div>
+            <h3>Megatron sigue invicto en la Arena de Combate</h3>
+            <p>El guerrero Decepticon demuestra su dominio absoluto en el enfrentamiento contra tres campeones Autobot simultáneamente.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 5 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="energia">
+            <div class="article-card-header">
+                <span class="article-category">Energón</span>
+                <span class="article-date">13 Abr 2026</span>
+            </div>
+            <h3>Nueva reserva de Energón descubierta en Nebulosa Kepler</h3>
+            <p>Expedición de prospección Autobot localiza depósitos masivos del recurso vital, asegurando suministro energético por ciclos.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 7 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="tecnologia">
+            <div class="article-card-header">
+                <span class="article-category">Tecnología</span>
+                <span class="article-date">12 Abr 2026</span>
+            </div>
+            <h3>Actividad Decepticon detectada en órbita baja</h3>
+            <p>Sensores registran señales de comunicación encriptada atribuidas a la flota de Megatron en las últimas horas. Teletran 1 en alerta máxima.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 4 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="deporte">
+            <div class="article-card-header">
+                <span class="article-category">Deporte</span>
+                <span class="article-date">11 Abr 2026</span>
+            </div>
+            <h3>Starscream asciende en el ranking de gladiadores</h3>
+            <p>El Decepticon consigue su tercera victoria consecutiva derrotando a Ironhide en una batalla épica de 47 ciclos.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 6 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="energia">
+            <div class="article-card-header">
+                <span class="article-category">Energón</span>
+                <span class="article-date">10 Abr 2026</span>
+            </div>
+            <h3>Estación de refinamiento de Energón opera a capacidad máxima</h3>
+            <p>La planta de procesamiento de Iacon logra nuevo récord de producción gracias a optimizaciones en reactores nucleares cibertonianos.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 7 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="tecnologia">
+            <div class="article-card-header">
+                <span class="article-category">Tecnología</span>
+                <span class="article-date">09 Abr 2026</span>
+            </div>
+            <h3>Sistema de defensa perimetral de Iacon recibe upgrade</h3>
+            <p>Nuevos cañones de plasma y escudos de contención energética fortalecen protección de la capital Autobot.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 6 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="deporte">
+            <div class="article-card-header">
+                <span class="article-category">Deporte</span>
+                <span class="article-date">08 Abr 2026</span>
+            </div>
+            <h3>Campeonato Intergaláctico de Gladiadores - Fase Final</h3>
+            <p>Los mejores guerreros de Cybertron se preparan para el enfrentamiento definitivo que determinará al campeón universal.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 5 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="energia">
+            <div class="article-card-header">
+                <span class="article-category">Energón</span>
+                <span class="article-date">07 Abr 2026</span>
+            </div>
+            <h3>Comerciantes reportan escasez de Energón en mercado negro</h3>
+            <p>La reducción de suministros externos genera especulación y aumento de precios en el mercado paralelo cibertroniano.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 6 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="tecnologia">
+            <div class="article-card-header">
+                <span class="article-category">Tecnología</span>
+                <span class="article-date">06 Abr 2026</span>
+            </div>
+            <h3>Equipo de Wheeljack presenta nuevo prototipo de arma</h3>
+            <p>El ingeniero jefe desvela revolucionario armamento que promete cambiar el equilibrio de fuerzas en el conflicto.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 7 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="deporte">
+            <div class="article-card-header">
+                <span class="article-category">Deporte</span>
+                <span class="article-date">05 Abr 2026</span>
+            </div>
+            <h3>Bumblebee rompe récord de velocidad en pista cerrada</h3>
+            <p>El Autobot alcanza velocidad inédita de 890 km/h en circuito de pruebas de Iacon, superando marca anterior.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 3 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="energia">
+            <div class="article-card-header">
+                <span class="article-category">Energón</span>
+                <span class="article-date">04 Abr 2026</span>
+            </div>
+            <h3>Crisis energética: Reservas mundiales en nivel crítico</h3>
+            <p>Análisis de Teletran 1 advierte sobre el agotamiento acelerado de fuentes de Energón conocidas en el espacio.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 5 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="tecnologia">
+            <div class="article-card-header">
+                <span class="article-category">Tecnología</span>
+                <span class="article-date">03 Abr 2026</span>
+            </div>
+            <h3>Nuevos módulos de inteligencia artificial en desarrollo</h3>
+            <p>El Consejo de Ciencias trabaja en sistemas de IA descentralizados para mejorar capacidades defensivas de unidades de campo.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 6 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+
+        
+        <article class="article-card" data-category="deporte">
+            <div class="article-card-header">
+                <span class="article-category">Deporte</span>
+                <span class="article-date">02 Abr 2026</span>
+            </div>
+            <h3>Ronda de cuartos de final: Los mejores enfrentamientos</h3>
+            <p>Análisis detallado de las batallas más épicas de esta temporada que definen a los gladiadores más poderosos.</p>
+            <div class="article-card-footer">
+                <span class="reading-time">⏱️ 7 min</span>
+                <a href="#" class="read-more">Leer más →</a>
+            </div>
+        </article>
+    </section>
+
+    
+    <section class="articles-pagination">
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn">→</button>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <section>
+            <h3>Iacon News</h3>
+            <p>Hasta que todos seamos uno. El medio de comunicación oficial de la capital Autobot desde el ciclo 1 de Cybertron.</p>
+        </section>
+
+        <nav>
+            <h4>Mapa del Sitio</h4>
             <ul>
-                <li>Iacon el diario de la capital autobot</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulos.html">Últimas Noticias</a></li>
+                <li><a href="articulo.html">Teletran 1</a></li>
+                <li><a href="acerca.html">Sobre Nosotros</a></li>
             </ul>
-        </div>
-    </footer>
-</body>
+        </nav>
 
+        <section>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#">Deporte</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Energón</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Iacon News — Hasta que todos seamos uno</p>
+        <ul>
+            <li>El diario de la capital Autobot</li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
 </html>

@@ -1,75 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teletran 1 - IaconNews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-<header>IaconNews
-    <div>
-        <div>
-            <a href="">
-                <span>Icono</span>
-                <span>Iacon<span>News</span></span>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Iacon<span>News</span></span>
             </a>
-            </div>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Articulos</a></li>
-            <li><a href="">Teletran 1</a></li>
-            <li><a href="">Acerca de</a></li>
-            
-        </ul>
-    </nav>
-    <div>
-        <button>C
-        <span>◐</span>
-        </button>
-    </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="articulo.html">Teletran 1</a></li>
+                <li><a href="acerca.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="theme-btn-wrapper">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                <span>🌙</span>
+            </button>
+        </div>
     </div>
 </header>
-    <main>
 
-    </main>
-    <footer>
-        <div>
+<main>
+    <article class="article-container">
+        
+        <section class="article-header">
+            <p class="article-tag">Tecnología</p>
+            <h1>Teletran 1: La Inteligencia Artificial de Iacon</h1>
+            <p class="article-subtitle">El cerebro que controla toda operación Autobot en tiempo real</p>
+            <div class="article-meta">
+                <span>📅 Ciclo Abril 2026</span>
+                <span>✍️ Perceptor, Jefe de Ciencias</span>
+                <span>⏱️ 8 min de lectura</span>
+            </div>
+        </section>
 
-            <section>
-                <h3>Iacon News</h3>
-                <p>Hasta que todos seamos uno</p>
+        <div class="article-content-wrapper">
+            
+            <section class="article-content">
+                
+                <section class="article-section">
+                    <h2>¿Qué es Teletran 1?</h2>
+                    <p>En el corazón de la capital Autobot, oculta bajo varios kilómetros de aleación de titanio y circuitos de plasma, late el cerebro más poderoso que Cybertron haya producido jamás: <strong>Teletran 1</strong>. Más que una simple computadora, Teletran 1 es una inteligencia artificial de propósito general que administra, procesa y anticipa cada movimiento dentro y fuera del planeta.</p>
+                    
+                    <p>Teletran 1 es el sistema de inteligencia artificial central de la nave Arca y, posteriormente, de la base Autobot en la Tierra. Fue diseñado por el Consejo de Ciencias de Iacon como un sistema de toma de decisiones autónomo capaz de procesar zettabytes de datos simultáneamente, rastrear miles de señales a través del sistema solar y coordinar operaciones militares en tiempo real.</p>
+
+                    <blockquote class="article-quote">
+                        <p>"Teletran 1 no es simplemente una máquina que responde preguntas. Es un sistema que aprende, anticipa y actúa. La diferencia entre una IA reactiva y una IA proactiva es la diferencia entre un mapa y un piloto."</p>
+                        <footer>— Perceptor, Jefe de Ciencias de Iacon, Ciclo 2025</footer>
+                    </blockquote>
+                </section>
+
+                
+                <section class="article-section">
+                    <h2>Arquitectura del Sistema</h2>
+                    <p>Desde el punto de vista técnico, Teletran 1 opera sobre una arquitectura de redes neuronales cuánticas organizadas en capas de procesamiento paralelo. Su núcleo central — llamado <em>Matrix Core</em> — ejecuta millones de inferencias por nanosegundo, integrando datos de sensores, históricos de combate y modelos predictivos.</p>
+
+                    <div class="article-specs">
+                        <h3>⚙ Especificaciones técnicas — Teletran 1 v9.4</h3>
+                        <ul>
+                            <li><strong>Núcleos de procesamiento:</strong> 12.800 unidades cuánticas paralelas</li>
+                            <li><strong>Memoria activa:</strong> 847 zettabytes de RAM fotónica</li>
+                            <li><strong>Alcance de rastreo:</strong> 12 sistemas estelares simultáneos</li>
+                            <li><strong>Latencia de respuesta:</strong> 0.003 nanosegundos</li>
+                            <li><strong>Idiomas soportados:</strong> 4.200 lenguas y dialectos cibertonianos</li>
+                            <li><strong>Última actualización de firmware:</strong> v9.4 — Ciclo Abril 2026</li>
+                        </ul>
+                    </div>
+                </section>
+
+                
+                <section class="article-section">
+                    <h2>Teletran 1 como IA: Ejemplo de Código</h2>
+                    <p>Para entender cómo funciona la lógica de una IA como Teletran 1 a nivel conceptual, veamos una simulación simplificada de su módulo de rastreo de señales y su sistema de clasificación de amenazas.</p>
+
+                    <h3>Módulo de rastreo de señales — Python</h3>
+                    <pre><code class="language-python"># Teletran 1 — Módulo de rastreo de señales v9.4
+# Sistema de Inteligencia Artificial — Base Iacon
+
+import math
+from dataclasses import dataclass
+from typing import List
+
+@dataclass
+class Signal:
+    id: str
+    origin: tuple            # (x, y, z) coordenadas espaciales
+    strength: float          # 0.0 — 1.0
+    faction: str             # 'autobot' | 'decepticon' | 'unknown'
+
+class TeletranTracker:
+    """Sistema de rastreo de señales de Teletran 1."""
+
+    def __init__(self, range_ly: float = 50.0):
+        self.range_ly = range_ly        # Alcance en años luz
+        self.signals: List[Signal] = []
+        self.threat_threshold = 0.65
+
+    def scan(self, signal: Signal) -> dict:
+        """Analiza una señal entrante y determina nivel de amenaza."""
+        distance = self._calculate_distance(signal.origin)
+
+        if distance > self.range_ly:
+            return {"status": "OUT_OF_RANGE", "distance_ly": distance}
+
+        threat_level = self._classify_threat(signal)
+        self.signals.append(signal)
+
+        return {
+            "signal_id":    signal.id,
+            "faction":      signal.faction,
+            "distance_ly": round(distance, 2),
+            "threat_level": threat_level,
+            "alert":        threat_level > self.threat_threshold,
+        }
+
+    def _calculate_distance(self, coords: tuple) -> float:
+        x, y, z = coords
+        return math.sqrt(x**2 + y**2 + z**2)
+
+    def _classify_threat(self, signal: Signal) -> float:
+        base = signal.strength
+        if signal.faction == "decepticon":
+            return min(base * 1.8, 1.0)   # Factor de amenaza elevado
+        elif signal.faction == "unknown":
+            return base * 1.2
+        return base * 0.3               # Señales Autobot = baja amenaza
+
+
+# ── Simulación ──────────────────────────────
+teletran = TeletranTracker(range_ly=50.0)
+
+incoming = Signal(
+    id       = "SIG-9947",
+    origin   = (12.5, -8.3, 4.1),
+    strength = 0.82,
+    faction  = "decepticon"
+)
+
+result = teletran.scan(incoming)
+print(result)
+
+# Output:
+# {'signal_id': 'SIG-9947', 'faction': 'decepticon',
+#  'distance_ly': 15.27, 'threat_level': 1.0, 'alert': True}</code></pre>
+
+                    <h3>Sistema de respuesta automática — JavaScript</h3>
+                    <pre><code class="language-javascript">// Teletran 1 — Sistema de alertas en tiempo real
+// Módulo de respuesta autónoma
+
+const THREAT_LEVELS = {
+    LOW:      { threshold: 0.3,  color: '#00ff88', label: 'BAJO'    },
+    MODERATE: { threshold: 0.6,  color: '#febc2e', label: 'MODERADO'},
+    HIGH:     { threshold: 0.85, color: '#ff6b35', label: 'ALTO'    },
+    CRITICAL: { threshold: 1.0,  color: '#ff3333', label: 'CRÍTICO' },
+};
+
+class TeletranAlertSystem {
+    constructor() {
+        this.activeAlerts = new Map();
+        this.subscribers  = [];
+    }
+
+    classifyThreat(level) {
+        const entry = Object.values(THREAT_LEVELS)
+            .reverse()
+            .find(t => level >= t.threshold);
+        return entry ?? THREAT_LEVELS.LOW;
+    }
+
+    triggerAlert(signalId, threatScore) {
+        const classification = this.classifyThreat(threatScore);
+        const alert = {
+            id:        signalId,
+            score:     threatScore,
+            level:     classification.label,
+            color:     classification.color,
+            timestamp: new Date().toISOString(),
+        };
+
+        this.activeAlerts.set(signalId, alert);
+        this.subscribers.forEach(cb => cb(alert));
+
+        return alert;
+    }
+
+    subscribe(callback) {
+        this.subscribers.push(callback);
+    }
+}
+
+// ── Uso ───────────────────────────────────
+const alertSystem = new TeletranAlertSystem();
+
+alertSystem.subscribe(alert => {
+    console.log(`[TELETRAN 1] ⚡ Alerta ${alert.level}: señal ${alert.id}`);
+});
+
+alertSystem.triggerAlert('SIG-9947', 0.91);
+// Output: [TELETRAN 1] ⚡ Alerta CRÍTICO: señal SIG-9947</code></pre>
+                </section>
+
+                
+                <section class="article-section">
+                    <h2>Capacidades de Aprendizaje</h2>
+                    <p>A diferencia de los sistemas de IA convencionales, Teletran 1 incorpora un motor de aprendizaje federado que le permite mejorar sus modelos de detección sin necesidad de centralizar todos los datos en un único nodo. Cada unidad Autobot en campo actúa como un nodo de entrenamiento distribuido, enviando gradientes de actualización al núcleo central de forma encriptada.</p>
+
+                    <p>Esto significa que cada misión completada, cada señal analizada y cada batalla procesada convierte a Teletran 1 en un sistema más preciso. Desde su activación en el ciclo 1984, su tasa de error en clasificación de señales ha caído del 12.4% al actual 0.0003%.</p>
+
+                    <blockquote class="article-quote">
+                        <p>"Teletran 1 no solo recuerda el pasado. Construye el futuro a partir de cada dato que procesa. Es el único sistema en el universo conocido capaz de modelar probabilidades de combate con siete decimales de precisión."</p>
+                        <footer>— Wheeljack, Ingeniero jefe de Iacon</footer>
+                    </blockquote>
+                </section>
+
+                
+                <section class="article-section">
+                    <h2>Conclusión</h2>
+                    <p>Teletran 1 representa el pico de la ingeniería cibertroniana aplicada a la inteligencia artificial. Su arquitectura distribuida, su capacidad de aprendizaje continuo y su velocidad de procesamiento lo convierten en el activo estratégico más valioso de los Autobots. Mientras Cybertron siga en pie, Teletran 1 velará por cada señal, cada amenaza y cada aliado en el universo conocido.</p>
+                </section>
+
+                
+                <div class="article-tags">
+                    <a href="#">Teletran 1</a>
+                    <a href="#">Inteligencia Artificial</a>
+                    <a href="#">Tecnología</a>
+                    <a href="#">Iacon</a>
+                    <a href="#">Python</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">Autobots</a>
+                </div>
             </section>
 
-            <nav>
-                <h4>Mapa del Sitio</h4>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Ultimas Noticias</li>
-                    <li>Teletran 1</li>
-                    <li>Sobre Nosotros</li>
-                </ul>
-            </nav>
+            
+            <aside class="article-sidebar">
+                <div class="sidebar-card">
+                    <h3>Información Rápida</h3>
+                    <dl>
+                        <dt>Sistema:</dt>
+                        <dd>IA Central de Iacon</dd>
+                        <dt>Versión:</dt>
+                        <dd>9.4</dd>
+                        <dt>Ciclo de Activación:</dt>
+                        <dd>1984</dd>
+                        <dt>Localización:</dt>
+                        <dd>Base Autobot, Iacon</dd>
+                    </dl>
+                </div>
 
-            <section>
-                <h4>Categorias</h4>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </section>
+                <div class="sidebar-card">
+                    <h3>Artículos Relacionados</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Autobots: Historia de la Resistencia</a></li>
+                        <li><a href="#">Cybertron: La Arquitectura del Planeta</a></li>
+                        <li><a href="#">Inteligencia Artificial en Tiempos de Guerra</a></li>
+                        <li><a href="#">El Consejo de Ciencias de Iacon</a></li>
+                    </ul>
+                </div>
 
+                <div class="sidebar-card cta">
+                    <h3>¿Quieres saber más?</h3>
+                    <p>Explora nuestra sección de tecnología para descubrir más sobre los sistemas que impulsan a los Autobots.</p>
+                    <a href="articulos.html" class="btn-secondary">Ver más artículos</a>
+                </div>
+            </aside>
         </div>
-        <div>
-            <p>© 2026 Iacon News. Hasta que todos seamos uno</p>
+    </article>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <section>
+            <h3>Iacon News</h3>
+            <p>Hasta que todos seamos uno. El medio de comunicación oficial de la capital Autobot desde el ciclo 1 de Cybertron.</p>
+        </section>
+
+        <nav>
+            <h4>Mapa del Sitio</h4>
             <ul>
-                <li>Iacon el diario de la capital autobot</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulos.html">Últimas Noticias</a></li>
+                <li><a href="articulo.html">Teletran 1</a></li>
+                <li><a href="acerca.html">Sobre Nosotros</a></li>
             </ul>
-        </div>
-    </footer>
+        </nav>
+
+        <section>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="#">Deporte</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Energón</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Iacon News — Hasta que todos seamos uno</p>
+        <ul>
+            <li>El diario de la capital Autobot</li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
