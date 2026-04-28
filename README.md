@@ -2,6 +2,7 @@
 Proyecto para validar los conocimientos obtenidos en el Track: Fundamentos del Desarrollo Web Profesional, con temática de Transformers, es similar a un sitio de noticias, en este caso basado en los sucesos ocurridos en el mundo de los personajes anteriormente mencionados.
 
 # Estructura
+```
 app05/
 ├─ index.html
 ├─ articulos.html
@@ -12,7 +13,7 @@ app05/
 ├─ js/
 │  └─ app.js
 └─ README.md
-
+```
 # Variables CSS
 --bg-main:      Color de fondo principal de la página
 --bg-surface:   Color de fondo para cards y superficies
