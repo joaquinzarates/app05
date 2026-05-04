@@ -14,6 +14,7 @@ app05/
 │  └─ app.js
 └─ README.md
 ```
+```
 # Variables CSS
 --bg-main:      Color de fondo principal de la página
 --bg-surface:   Color de fondo para cards y superficies
@@ -30,6 +31,7 @@ app05/
 --transition:   Duración y tipo de animación estándar
 --font-tech:    Fuente tecnológica (Orbitron)
 --font-body:    Fuente de cuerpo (Exo 2)
+```
 # Funcionalidad JS
 ### Tema
 se permite el cambio de tema claro a oscuro y viceversa haciendo click en alguno de los botones 🌙 / ☀️
